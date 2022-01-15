@@ -13,9 +13,14 @@ function Welcome() {
         { "id": 8, "brand": "Audi", "model": "A4", "type": "luxury", "year": "2012", "pricePerDay": "44", "gearbox": "AT", "engine": "2"}
     ]
     let narr= arr.map((el)=>{
-        return `<li>${el}</li>`
+        return Number(el['pricePerDay'])
     });
-    console.log(narr);
+    let TotalPrice = narr.reduce((accum,val)=>{
+       return  accum+=val;
+    })
+    let result = TotalPrice / arr.length;
+    let finalResult = Math.floor(result)
+    
     return(
         <div className="down-header">
             <div className="wrapper1">
@@ -24,11 +29,11 @@ function Welcome() {
             </div>
             <div className="down">
                 <p className="text-1">Car rental in <span className="sp">Kharkiv</span></p>
-                <p className="text-2">Total 852 cars with awerage cost</p>
+                <p className="text-2">Total {arr.length} cars with average cost fo {finalResult}$ per day </p>
             </div>
             </div>
             <div>
-            {narr}
+        </div>
         </div>
     );
 };
