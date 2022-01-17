@@ -37,7 +37,7 @@ function Welcome() {
                 <p className="text-2">Total {cars.length} cars with average cost fo {finalResult}$ per day </p>
             </div>
             </div>
-            <div>
+            <div className ="carcard">
                 {
                     cars.map((car) => (
                         <CarCard car={ car }/>
