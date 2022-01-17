@@ -58,3 +58,45 @@ display: inline-block;
 .sp{
     color: #28c69a;
 }
+.carsf{
+    display: flex;
+}
+.carwindow{
+    display: flex;
+    margin: 10px;
+    border: 1px solid gray;
+}
+.carname{
+    font-weight: 600;
+    font-size: 19px;
+    line-height: 24px;
+    color: #333e50;
+    margin-top: 25px;
+    justify-content: space-around;
+    margin-left: 10px;
+}
+.carspecifications{
+    color: #79818c;
+    justify-content: start;
+    margin: 50px 0px 0px -70px 
+
+}
+.pricename{
+    display: flex;
+    color:#333e50;
+   
+    
+}
+.pricename{
+    justify-content: space-between;
+    margin: 150px 50px 21px -50px;
+    flex-grow: 1;
+  
+}
+.price{
+    display: inline-block;
+}
+.pricedays{
+    display: inline-block;
+    margin-left: 150px;
+}
