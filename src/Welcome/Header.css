@@ -59,47 +59,64 @@ display: inline-block;
     color: #28c69a;
 }
 .carsf{
-    display: flex;
-    
-}
-.carwindow{
-    display: flex;
+    height: 200px;
+    width: 300px;
+    border: 1px solid black;
     margin: 10px;
-    border: 1px solid gray;
-}
-.carcard{
-    display: flex;
-    flex-wrap: wrap;
-    margin: 350px 430px 0px 20px;
-    justify-content: flex-start;
-}
-.carname{
-    font-weight: 600;
-    font-size: 19px;
-    line-height: 24px;
-    color: #333e50;
-    margin-top: 25px;
-    justify-content: space-around;
-    margin-left: 10px;
-}
-.carspecifications{
-    color: #79818c;
-    justify-content: start;
-    margin: 50px 0px 0px -70px 
-
 }
 .pricename{
-    display: flex;
-    color:#333e50;
-    justify-content: space-between;
-    margin: 150px 50px 21px -50px;
-    flex-grow: 1;
-  
+    height: 100%;
+    width: 100%;
+    align-self: flex-end;
 }
 .price{
+    width: 50%;
     display: inline-block;
+    margin-left: 15px;
+    margin-bottom: 15px;
+    color: #79818c;
 }
 .pricedays{
+    width: 50%;
     display: inline-block;
-    margin-left: 150px;
+    margin-right: 15px;
+    margin-bottom: 15px;
+    color:  #333e50;
 }
+.flex-pricedays{
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 10px;
+}
+.pricename {
+    display: flex;
+    align-items:flex-end;
+}
+.CarsAlign 
+{
+    display: flex;
+    align-content: flex-start;
+    flex-direction: row;
+    flex-wrap: wrap;
+    height: 700px;
+}
+.carwindow {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.carsf:hover {
+    outline: 5px solid #19a880;
+    outline-offset: 5px;
+    transition-duration: 0.5s;
+    transition-timing-function: linear;
+  }
+  .carname{
+      margin: 10px 0px 10px 10px;
+      color: #333e50;
+      
+  }
+  .carspecifications{
+    margin-left: 15px;
+    color: #79818c
+  }

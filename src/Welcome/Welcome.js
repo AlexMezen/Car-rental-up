@@ -1,7 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './Header.css';
-import CarCard from './CarCard';
 function Welcome() {
     let cars =[
         { id: 1, brand: "Volkswagen", model: "Polo", type: "economy", year: "2012", pricePerDay: "17", gearbox: "AT", engine: "1.6"},
@@ -21,10 +20,7 @@ function Welcome() {
     })
     let result = TotalPrice / cars.length;
     let finalResult = Math.floor(result);
-    cars.map((car) => (
-        <CarCard car={ car }/>
-      ));
-    
+
     return(
         
         <div className="down-header">
@@ -37,13 +33,6 @@ function Welcome() {
                 <p className="text-2">Total {cars.length} cars with average cost fo {finalResult}$ per day </p>
             </div>
             </div>
-            <div className ="carcard">
-                {
-                    cars.map((car) => (
-                        <CarCard car={ car }/>
-                      ))
-                }
-        </div>
         </div>
         
     );
