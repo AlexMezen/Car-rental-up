@@ -1,0 +1,36 @@
+.down-header {
+  display: flex;
+  background-color: #00353a;
+  height: 350px;
+  justify-content: center;
+}
+.wrapper1 {
+  width: 80%;
+}
+.titleWrapper {
+  margin-top: 90px;
+  width: 250px;
+}
+.logoWrapper h1 {
+  font-size: 25px;
+  color: #f2efea;
+}
+.title {
+  font-size: 40px;
+  margin: 0;
+  color: white;
+}
+.subTitle {
+  margin-top: 10px;
+  color: #b2b2b2;
+}
+.sp {
+  color: #28c69a;
+}
+.carsAlign {
+  display: flex;
+  align-content: flex-start;
+  flex-direction: row;
+  flex-wrap: wrap;
+  height: 700px;
+}

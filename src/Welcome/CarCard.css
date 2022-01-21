@@ -1,0 +1,54 @@
+.carsf {
+  height: 200px;
+  width: 300px;
+  border: 1px solid black;
+  margin: 10px;
+}
+.pricename {
+  height: 100%;
+  width: 100%;
+  align-self: flex-end;
+}
+.price {
+  width: 50%;
+  display: inline-block;
+  margin-left: 15px;
+  margin-bottom: 15px;
+  color: #79818c;
+}
+.pricedays {
+  width: 50%;
+  display: inline-block;
+  margin-right: 15px;
+  margin-bottom: 15px;
+  color: #333e50;
+}
+.roundPricedays {
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 10px;
+}
+.pricename {
+  display: flex;
+  align-items: flex-end;
+}
+
+.carwindow {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.carsf:hover {
+  outline: 5px solid #19a880;
+  outline-offset: 5px;
+  transition-duration: 0.5s;
+  transition-timing-function: linear;
+}
+.carname {
+  margin: 10px 0px 10px 10px;
+  color: #333e50;
+}
+.carSpecifications {
+  margin-left: 25px;
+  color: #79818c;
+}
