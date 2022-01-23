@@ -86,13 +86,9 @@ function Welcome() {
     },
   ];
 
-  const totalPrice = cars
-    .map((el) => {
-      return el["pricePerDay"];
-    })
-    .reduce((accum, val) => {
-      return (accum += val);
-    });
+  const totalPrice = cars.reduce((accum, car) => {
+    return (accum += car["pricePerDay"]);
+  }, 0);
   const result = Math.floor(totalPrice / cars.length);
 
   return (
