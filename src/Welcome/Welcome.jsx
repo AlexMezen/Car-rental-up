@@ -87,7 +87,7 @@ function Welcome() {
   ];
 
   const totalPrice = cars.reduce((accum, car) => {
-    return (accum += car["pricePerDay"]);
+    return (accum += car.pricePerDay);
   }, 0);
   const result = Math.floor(totalPrice / cars.length);
 
