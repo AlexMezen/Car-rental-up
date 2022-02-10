@@ -1,9 +1,5 @@
-import React from 'react'
+import React from "react";
 
-export default function Error() {
-    return (
-        <div>
-            <p>Error</p>
-        </div>
-    )
+export default function Error(props) {
+  return <div>{props.error}</div>;
 }

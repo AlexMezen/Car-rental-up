@@ -34,3 +34,7 @@
   flex-wrap: wrap;
   height: 700px;
 }
+.load {
+  display: flex;
+  justify-content: center;
+}

@@ -1,6 +1,11 @@
 import React from "react";
-import { useState, useEffect } from "react";
 
 export default function Loading() {
-  return <div className="loading">Loading...</div>;
+  return (
+    <div>
+      <h1>
+        <b>Loading...</b>
+      </h1>
+    </div>
+  );
 }
