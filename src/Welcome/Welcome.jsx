@@ -8,21 +8,21 @@ import Loading from "../Loading";
 
 function Welcome() {
   const [cars, setCars] = useState([]);
-  const [error, setError] = useState([]);
+  const [errorState, setError] = useState(false);
 
   useEffect(() => {
     Service.listRentalCars()
       .then((resp) => {
         setCars(resp.data);
       })
-      .catch(function () {
+
+      .catch(function (error) {
         setError(error);
       });
   }, []);
-  useEffect(() => {
-    setError(error ? <Error error={error} /> : "");
-  });
-  console.log(error);
+  if (errorState) {
+    return <Error errorMessage={errorState} />;
+  }
   const totalPrice = cars.reduce((accum, car) => {
     return (accum += car.pricePerDay);
   }, 0);
